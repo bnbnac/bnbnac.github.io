@@ -8,8 +8,7 @@
     </head>
     <body>
         <h1>[ 빵 계산기입니다 ]</h1>
-        <h3><샘플>의 [파이,두께,무게], <공정>의 [무게]를 입력하고 구하려는 공정값을 선택하세요</h3>
-        <h3>처음으로 돌아가려면 키보드 f5를 눌러주세요</h3>
+        <h3><샘플>의 [파이,두께,무게], <공정>의 [무게]를 입력하고 준비완료 버튼을 눌러주세요</h3>
 
         <img style="position:absolute;top: 200px;" src="빵.png" width="1200" />
         <form id="samForm">
@@ -17,18 +16,17 @@
             <input id="samThick" style="position:absolute;top: 360px;left: 410px;" placeholder="두께 입력" />
             <input id="samWeight" style="position:absolute;top: 510px;left: 220px;" placeholder="무게 입력" />
             <input id="proWeight" style="position:absolute;top: 510px;left: 820px;" placeholder="무게 입력" />
-            <button id="selPi" style="position:absolute;top: 120px;left: 480px;width: 150px;height: 30px;">선택 : 파이(두께 입력)</button>
-            <button id="selThick" style="position:absolute;top: 160px;left: 480px;width: 150px;height: 30px;">선택 : 두께(파이 입력)</button>
+            <button id="complete" style="position:absolute;top: 120px;left: 480px;width: 300px;height: 60px;">준비완료</button>
         </form>
         <form id="proForm">
             <button id="calThick" style="display:none; position:absolute;top: 250px;left: 720px;width: 100px;height: 20px;">파이 계산</button>
             <button id="calPi" style="display:none; position:absolute;top: 330px;left: 1080px;width: 100px;height: 20px;">두께 계산</button>
             <input disabled="true" id="proPi" style="position:absolute;top: 275px;left: 680px;" placeholder="초기값 입력 필요" />
             <input disabled="true" id="proThick" style="position:absolute;top: 360px;left: 1010px;" placeholder="초기값 입력 필요" />
-
-
         </form>
-
+        <form id="reset">
+        <button style="position:absolute;top: 120px;left: 880px;width: 300px;height: 60px;">처음으로</button>
+        </form>
 
         <script src="bread_calculator.js"></script>
 
